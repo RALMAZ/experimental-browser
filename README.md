@@ -1,6 +1,6 @@
 # Experimental Browser
 
-<img width="100%" src="https://ralmaz.js.org/img/electron_7LLChlx9J5.gif" />  
+<img width="100%" src="https://ralmaz.pro/img/electron_47YwR9H6aI.gif" />  
 
 To run locally:
 

@@ -126,7 +126,7 @@ function applyUrlChange(payload, id) {
 const processUrlChange = debounce(600, (e, id) => {
   let payload = e.target.innerText;
 
-	applyUrlChange(payload, id);
+  applyUrlChange(payload, id);
 });
 
 function processHistory(id, payload) {
@@ -174,8 +174,6 @@ onMounted(() => {
   });
 
   el.addEventListener('tabRemove', ({ detail }) => {
-    // @TODO remove listeners
-
     try {
       let id = detail.tabEl.dataset.tabId;
 

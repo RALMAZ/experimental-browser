@@ -4,7 +4,6 @@ import uniqid from 'uniqid';
 import { debounce } from 'throttle-debounce';
 import ChromeTabs from './utils/chrome-tabs.js';
 
-const loading = ref(true);
 const tabs = ref([]);
 
 const chromeTabs = new ChromeTabs();
@@ -202,9 +201,15 @@ onMounted(() => {
     }
   });
 
-  addTab();
+  addTab('https://www.google.com/search?q=cat');
 
-  loading.value = false;
+  addTab('https://ralmaz.pro');
+
+  addTab('https://www.rfc-editor.org/rfc/rfc6750');
+  
+  addTab('https://dev.to');
+
+  addTab();
 });
 </script>
 
@@ -606,6 +611,13 @@ onMounted(() => {
       justify-content: space-between;
       padding: 0 0.5em 0 0.5em;
       text-align: center;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      
       i {
         color: #444;
         width: 30px;
@@ -615,6 +627,12 @@ onMounted(() => {
 
       svg {
         cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
     }
       
